@@ -22,7 +22,7 @@ function drawLose() {
 
   // Instruction text
   textSize(20);
-  text("Click or press R to return to Start.", width / 2, 360);
+  text("Click or press R to ask another question.", width / 2, 360);
 }
 
 // ------------------------------

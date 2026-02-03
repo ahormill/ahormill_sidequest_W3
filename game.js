@@ -17,7 +17,7 @@ const gameBtn = {
   y: 550, // y position (centre of the button)
   w: 260, // width
   h: 90, // height
-  label: "PRESS HERE", // text shown on the button
+  label: "REVEAL FORTUNE", // text shown on the button
 };
 
 // ------------------------------
@@ -33,11 +33,11 @@ function drawGame() {
   fill(0); // black text
   textSize(32);
   textAlign(CENTER, CENTER);
-  text("Choose Your Fortune", width / 2, 160);
+  text("Ask a yes-or-no question", width / 2, 160);
 
   textSize(18);
   text(
-    "Click the button (or press ENTER) for a random result.",
+    "Click the button (or press ENTER) to receive your answer.",
     width / 2,
     210,
   );

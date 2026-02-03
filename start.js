@@ -12,13 +12,13 @@
 // currentScreen === "start"
 function drawStart() {
   // Background colour for the start screen
-  background(180, 225, 220); // soft teal background
+  background(160, 32, 240); // soft purple background
 
   // ---- Title text ----
   fill(30, 50, 60);
   textSize(46);
   textAlign(CENTER, CENTER);
-  text("Choose your fortune", width / 2, 180);
+  text("CHOOSE YOUR FORTUNE", width / 2, 180);
 
   // ---- Buttons (data only) ----
   // These objects store the position/size/label for each button.
