@@ -10,15 +10,30 @@
 // ------------------------------------------------------------
 // drawStart() is called from main.js only when:
 // currentScreen === "start"
+function drawHomeBackground() {
+  // Gradient
+  for (let y = 0; y < height; y++) {
+    let inter = map(y, 0, height, 0, 1);
+    let c = lerpColor(color(215, 190, 255), color(255), inter);
+    stroke(c);
+    line(0, y, width, y);
+  }
+}
+noStroke();
+fill(255, 255, 255, 120);
+for (let i = 0; i < 30; i++) {
+  ellipse(random(width), random(height), random(1, 3));
+}
+
 function drawStart() {
   // Background colour for the start screen
-  background(160, 32, 240); // soft purple background
+  drawHomeBackground();
 
   // ---- Title text ----
   fill(30, 50, 60);
   textSize(46);
   textAlign(CENTER, CENTER);
-  text("CHOOSE YOUR FORTUNE", width / 2, 180);
+  text("🔮CHOOSE YOUR FORTUNE🔮", width / 2, 180);
 
   // ---- Buttons (data only) ----
   // These objects store the position/size/label for each button.

@@ -27,7 +27,7 @@ const gameBtn = {
 // when currentScreen === "game"
 function drawGame() {
   // Set background colour for the game screen
-  background(240, 230, 140);
+  background(160, 32, 240);
 
   // ---- Title and instructions text ----
   fill(0); // black text
