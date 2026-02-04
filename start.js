@@ -17,14 +17,14 @@ function drawHomeBackground() {
     let c = lerpColor(color(215, 190, 255), color(255), inter);
     stroke(c);
     line(0, y, width, y);
+    // Sparkles
+    noStroke();
+    fill(255, 255, 255, 120);
+    for (let i = 0; i < 30; i++) {
+      ellipse(random(width), random(height), random(1, 3));
+    }
   }
 }
-noStroke();
-fill(255, 255, 255, 120);
-for (let i = 0; i < 30; i++) {
-  ellipse(random(width), random(height), random(1, 3));
-}
-
 function drawStart() {
   // Background colour for the start screen
   drawHomeBackground();
