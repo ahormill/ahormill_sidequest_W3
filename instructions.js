@@ -12,8 +12,7 @@
 // only when currentScreen === "instr"
 function drawInstr() {
   // Light neutral background
-  background(240);
-
+  background(30, 50, 60);
   // ---- Screen title ----
   fill(0);
   textAlign(CENTER, TOP);
